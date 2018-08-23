@@ -1,0 +1,41 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "javascript.validate.enable": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "standard.enable": true,
+  "standard.semistandard": true,
+  "standard.options": {
+    "plugins": [
+      "html"
+    ],
+    "parser": "babel-eslint",
+    "env": [
+      "mocha"
+    ]
+  },
+  "standard.validate": [
+    "javascript",
+    "html"
+  ],
+  "semistandard.options": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "standard",
+      "promise",
+      "mocha",
+      "html",
+      "chai-friendly"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "no-unused-expressions": 0,
+      "chai-friendly/no-unused-expressions": 2
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "senti-fastify-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/fastify start app/index.js",
+    "test": "standard",
+    "dev": "./node_modules/.bin/nodemon --exec \"./node_modules/.bin/fastify start app/index.js --options -P\"",
+    "lint": "./node_modules/.bin/standard --fix"
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "chance": "^1.0.16",
+    "fastify": "^1.6.0",
+    "fastify-auth": "^0.3.0",
+    "fastify-autoload": "^0.4.0",
+    "fastify-caching": "^3.0.0",
+    "fastify-cli": "^0.17.0",
+    "fastify-cookie": "^2.0.1",
+    "fastify-nodemailer": "^1.4.0",
+    "fastify-plugin": "^1.1.2",
+    "fastify-server-session": "^2.0.0",
+    "fastify-session": "^1.1.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "babel-preset-env": "1.7.0",
+    "eslint": "4.16.0",
+    "eslint-config-semistandard": "11.0.0",
+    "eslint-plugin-html": "4.0.0",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-standard": "3.0.1",
+    "fastify-static": "^0.12.0",
+    "nodemon": "^1.18.3",
+    "semistandard": "11.0.0",
+    "standard": "^11.0.1"
+  }
+}
